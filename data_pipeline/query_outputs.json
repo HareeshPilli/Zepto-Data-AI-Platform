@@ -1,0 +1,355 @@
+{
+  "query1": {
+    "query": "SELECT title, price_gbp, rating\nFROM books\nWHERE rating >= 4\nORDER BY price_gbp DESC\nLIMIT 10",
+    "output": [
+      {
+        "title": "The Death of Humanity: and the Case for Life",
+        "price_gbp": 58.11,
+        "rating": 4
+      },
+      {
+        "title": "The Past Never Ends",
+        "price_gbp": 56.5,
+        "rating": 4
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "price_gbp": 54.23,
+        "rating": 5
+      },
+      {
+        "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+        "price_gbp": 52.29,
+        "rating": 5
+      },
+      {
+        "title": "Behind Closed Doors",
+        "price_gbp": 52.22,
+        "rating": 4
+      },
+      {
+        "title": "We Love You, Charlie Freeman",
+        "price_gbp": 50.27,
+        "rating": 5
+      },
+      {
+        "title": "Sharp Objects",
+        "price_gbp": 47.82,
+        "rating": 4
+      },
+      {
+        "title": "Private Paris (Private #10)",
+        "price_gbp": 47.61,
+        "rating": 5
+      },
+      {
+        "title": "Wall and Piece",
+        "price_gbp": 44.18,
+        "rating": 4
+      },
+      {
+        "title": "Unseen City: The Majesty of Pigeons, the Discreet Charm of Snails & Other Wonders of the Urban Wilderness",
+        "price_gbp": 44.18,
+        "rating": 4
+      }
+    ]
+  },
+  "query2": {
+    "query": "SELECT DISTINCT category_id\nFROM books\nWHERE in_stock = 1",
+    "output": [
+      {
+        "category_id": 1
+      },
+      {
+        "category_id": 2
+      },
+      {
+        "category_id": 3
+      },
+      {
+        "category_id": 4
+      },
+      {
+        "category_id": 5
+      },
+      {
+        "category_id": 6
+      },
+      {
+        "category_id": 7
+      },
+      {
+        "category_id": 8
+      },
+      {
+        "category_id": 9
+      },
+      {
+        "category_id": 10
+      },
+      {
+        "category_id": 11
+      },
+      {
+        "category_id": 12
+      },
+      {
+        "category_id": 13
+      },
+      {
+        "category_id": 14
+      },
+      {
+        "category_id": 15
+      },
+      {
+        "category_id": 16
+      },
+      {
+        "category_id": 17
+      },
+      {
+        "category_id": 18
+      },
+      {
+        "category_id": 19
+      },
+      {
+        "category_id": 20
+      },
+      {
+        "category_id": 21
+      },
+      {
+        "category_id": 22
+      },
+      {
+        "category_id": 23
+      },
+      {
+        "category_id": 24
+      },
+      {
+        "category_id": 25
+      },
+      {
+        "category_id": 26
+      },
+      {
+        "category_id": 27
+      },
+      {
+        "category_id": 28
+      },
+      {
+        "category_id": 29
+      }
+    ]
+  },
+  "query3": {
+    "query": "SELECT title, rating, price_gbp\nFROM books\nWHERE rating IN (1, 5)\nORDER BY rating, title\nLIMIT 15",
+    "output": [
+      {
+        "title": "In Her Wake",
+        "rating": 1,
+        "price_gbp": 12.84
+      },
+      {
+        "title": "In a Dark, Dark Wood",
+        "rating": 1,
+        "price_gbp": 19.63
+      },
+      {
+        "title": "Layered: Baking, Building, and Styling Spectacular Cakes",
+        "rating": 1,
+        "price_gbp": 40.11
+      },
+      {
+        "title": "Mesaerion: The Best Science Fiction Stories 1800-1849",
+        "rating": 1,
+        "price_gbp": 37.59
+      },
+      {
+        "title": "Olio",
+        "rating": 1,
+        "price_gbp": 23.88
+      },
+      {
+        "title": "Online Marketing for Busy Authors: A Step-By-Step Guide",
+        "rating": 1,
+        "price_gbp": 46.35
+      },
+      {
+        "title": "Pop Gun War, Volume 1: Gift",
+        "rating": 1,
+        "price_gbp": 18.97
+      },
+      {
+        "title": "Soumission",
+        "rating": 1,
+        "price_gbp": 50.1
+      },
+      {
+        "title": "The Age of Genius: The Seventeenth Century and the Birth of the Modern Mind",
+        "rating": 1,
+        "price_gbp": 19.73
+      },
+      {
+        "title": "The Bear and the Piano",
+        "rating": 1,
+        "price_gbp": 36.89
+      },
+      {
+        "title": "The Black Maria",
+        "rating": 1,
+        "price_gbp": 52.15
+      },
+      {
+        "title": "The Electric Pencil: Drawings from Inside State Hospital No. 3",
+        "rating": 1,
+        "price_gbp": 56.06
+      },
+      {
+        "title": "The Gutsy Girl: Escapades for Your Life of Epic Adventure",
+        "rating": 1,
+        "price_gbp": 37.13
+      },
+      {
+        "title": "The Pioneer Woman Cooks: Dinnertime: Comfort Classics, Freezer Food, 16-Minute Meals, and Other Delicious Ways to Solve Supper!",
+        "rating": 1,
+        "price_gbp": 56.41
+      },
+      {
+        "title": "The Requiem Red",
+        "rating": 1,
+        "price_gbp": 22.65
+      }
+    ]
+  },
+  "query4": {
+    "query": "SELECT title, price_gbp\nFROM books\nWHERE price_gbp BETWEEN 20 AND 30\nORDER BY price_gbp",
+    "output": [
+      {
+        "title": "The Inefficiency Assassin: Time Management Tactics for Working Smarter, Not Longer",
+        "price_gbp": 20.59
+      },
+      {
+        "title": "Shakespeare's Sonnets",
+        "price_gbp": 20.66
+      },
+      {
+        "title": "In the Country We Love: My Family Divided",
+        "price_gbp": 22.0
+      },
+      {
+        "title": "America's Cradle of Quarterbacks: Western Pennsylvania's Football Factory from Johnny Unitas to Joe Montana",
+        "price_gbp": 22.5
+      },
+      {
+        "title": "The Boys in the Boat: Nine Americans and Their Epic Quest for Gold at the 1936 Berlin Olympics",
+        "price_gbp": 22.6
+      },
+      {
+        "title": "The Requiem Red",
+        "price_gbp": 22.65
+      },
+      {
+        "title": "#HigherSelfie: Wake Up Your Life. Free Your Soul. Find Your Tribe.",
+        "price_gbp": 23.11
+      },
+      {
+        "title": "The Elephant Tree",
+        "price_gbp": 23.82
+      },
+      {
+        "title": "Olio",
+        "price_gbp": 23.88
+      },
+      {
+        "title": "The Mindfulness and Acceptance Workbook for Anxiety: A Guide to Breaking Free from Anxiety, Phobias, and Worry Using Acceptance and Commitment Therapy",
+        "price_gbp": 23.89
+      },
+      {
+        "title": "Saga, Volume 6 (Saga (Collected Editions) #6)",
+        "price_gbp": 25.02
+      },
+      {
+        "title": "Chase Me (Paris Nights #2)",
+        "price_gbp": 25.27
+      },
+      {
+        "title": "Unbound: How Eight Technologies Made Us Human, Transformed Society, and Brought Our World to the Brink",
+        "price_gbp": 25.52
+      },
+      {
+        "title": "Reasons to Stay Alive",
+        "price_gbp": 26.41
+      }
+    ]
+  },
+  "query5": {
+    "query": "SELECT b.title, b.rating, b.price_gbp, c.category_name\nFROM books b\nJOIN categories c ON b.category_id = c.category_id\nORDER BY b.rating DESC, b.price_gbp DESC\nLIMIT 10",
+    "output": [
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "rating": 5,
+        "price_gbp": 54.23,
+        "category_name": "History"
+      },
+      {
+        "title": "Scott Pilgrim's Precious Little Life (Scott Pilgrim #1)",
+        "rating": 5,
+        "price_gbp": 52.29,
+        "category_name": "Sequential Art"
+      },
+      {
+        "title": "We Love You, Charlie Freeman",
+        "rating": 5,
+        "price_gbp": 50.27,
+        "category_name": "Fiction"
+      },
+      {
+        "title": "Private Paris (Private #10)",
+        "rating": 5,
+        "price_gbp": 47.61,
+        "category_name": "Fiction"
+      },
+      {
+        "title": "Worlds Elsewhere: Journeys Around Shakespeare\u2019s Globe",
+        "rating": 5,
+        "price_gbp": 40.3,
+        "category_name": "Nonfiction"
+      },
+      {
+        "title": "Join",
+        "rating": 5,
+        "price_gbp": 35.67,
+        "category_name": "Science Fiction"
+      },
+      {
+        "title": "Rip it Up and Start Again",
+        "rating": 5,
+        "price_gbp": 35.02,
+        "category_name": "Music"
+      },
+      {
+        "title": "Black Dust",
+        "rating": 5,
+        "price_gbp": 34.53,
+        "category_name": "Romance"
+      },
+      {
+        "title": "The Activist's Tao Te Ching: Ancient Advice for a Modern Revolution",
+        "rating": 5,
+        "price_gbp": 32.24,
+        "category_name": "Spirituality"
+      },
+      {
+        "title": "Chase Me (Paris Nights #2)",
+        "rating": 5,
+        "price_gbp": 25.27,
+        "category_name": "Romance"
+      }
+    ]
+  }
+}
